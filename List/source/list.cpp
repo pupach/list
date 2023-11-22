@@ -46,7 +46,7 @@ CODE_ERRORS Realloc_List(List *list, int new_capacity)
     if(new_capacity == -1)  new_capacity = list->capacity * 2;
 
     list->arr = (Elem_list *)realloc(list->arr, (list->capacity + 1)* sizeof(Elem_list));
-    if(list->arr == nullptr)        return PTR_NULL;
+    if(list->arr == nullptr)        return PTR_NULL;//TODO assign realloc value to variable first
 
     return ALL_GOOD;
 }
@@ -128,7 +128,7 @@ int find_Elem_in_list(List *list, int ind_to_find)
     }
     int cur_ind = 0;
     int cur_Elem = -1;
-    while(ind_to_find != cur_Elem)
+    while(cur_Elem != ind_to_find)
     {
         cur_ind = list->arr[cur_ind].next;
         cur_Elem += 1;

@@ -8,5 +8,7 @@
 
 #include "../../my_lib/work_with_file.h"
 
+// TODO: reinclude defence
+
 CODE_ERRORS Graphiz_Dump(List *list);
 CODE_ERRORS Write_Graphiz_Dump_to_File(FILE *stream_write, List *list);

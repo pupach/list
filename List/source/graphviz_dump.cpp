@@ -29,6 +29,12 @@ CODE_ERRORS Graphiz_Dump(List *list)
     return ALL_GOOD;
 }
 
+................................|..@..$...ede.........
+
+  @  $
+ede
+
+
 CODE_ERRORS Write_Graphiz_Dump_to_File(FILE *stream_write, List *list)
 {
 
